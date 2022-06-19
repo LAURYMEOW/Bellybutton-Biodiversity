@@ -1,0 +1,26 @@
+
+
+.jumbotron {
+    background-image: url("../images/bellybutton biodiversity.jpg");
+    background-size: 100% 100%;
+    opacity: 0.8;
+    text-align: center;
+    color: rgb(180, 235, 247);
+  }
+
+.display-4 {
+    opacity: 1.5;
+}
+  
+.bg-img-title {
+    position: absolute;
+    top: 420px;
+    left: 20px;
+}
+
+.container {
+  background-color: #EBEBEB;
+}
+
+  
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link 
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron bg-transparent text-center">
+        <h1 class = "display-4"> Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h2>Curious fact</h2>
+        <p>
+          Belly buttons are very diverse habitats! Referring to the article "Belly Button Biodiversity: Citizen scientists navigate'the intimate forests of the umbilicus.'" published by National Geographic, in total, have been discovered 2,368 different species. More than half of those may be new to science.(1)
+        </p>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <div id="bar"></div>
+          <p>This bar chart shows from highest to lowest the amount and type of bacteria that was found in the navel of the participating volunteer.</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <div id="gauge"></div>
+          <p>This Gauge Chart shows the times that the selected participant washed their navel per week.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"></div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div id="bubble"></div>
+          <p>The Bubble Chart muestra los resultados de cultivo de bacterias para la persona analizada.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Source</h4>
+            <p> (1) Kimberly Dumke, (2022). Belly Button Biodiversity Citizen scientists navigate ‘the intimate forests of the umbilicus.’. National Geographic. Retrieved from resource URL: https://education.nationalgeographic.org/resource/belly-button-biodiversity.</p>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+  
+</body>
+
+</html>
